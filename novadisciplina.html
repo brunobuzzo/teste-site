@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Contato</title>
+<title>Nova Disciplina</title>
 
 <meta name="author" content="Bruno Tomas- 1700548">
 <meta name="author" content="Henrique Saula- 1700084">
@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" type="text/css" href="css\estilo.css">
 <link rel="stylesheet" type="text/css" href="css\estilo-index.css">
-<link rel="stylesheet" type="text/css" href="css\formlogin.css">
+<link rel="stylesheet" type="text/css" href="css\cadastro.css">
 
 
 
@@ -76,31 +76,31 @@
 				</header>
 			</article>
 
-
-<div class="containercontato">
-<img src="imagens\iconemenu.png" alt="icone menu">
+			
+<div class="containerdisciplina">
 <form method="post">
-<div class="form-input">
-<input type="text" placeholder="Nome Completo*" name="Nome">
-</div>
-<div class="form-input">
-<input type="email" placeholder="Email*" name="Email">
-</div>
-<label for="select_assunto"></label>
-<select name="assuntos">
-<option value="sem assunto" selected>Selecione um assunto</option> 
-<option value="Secretaria">Secretaria</option>
-<option value="Financeiro">Financeiro</option>
-<option value="Suporte">Suporte</option>
-<option value="Professor">Professor</option>
+<div class="group">
+<input type="text" placeholder=" Professor Responsável*" name="Professor">
+<input type="number" placeholder=" Horas mensais*" name="Horas">
+<input type="text" placeholder=" Duração da aula" name="Dura_aula">
+<select name="dias_semana">
+	<option value="Selecione_semana" selected="selected">Dia Semana que terá aula</option>
+	<option value="Seg">Segunda- Feira</option>
+	<option value="Ter">Terça- Feira</option>
+	<option value="Qua">Quarta- Feira</option>
+	<option value="Qui">Quinta- Feira</option>
+	<option value="Sex">Sexta- Feira</option>
+	<option value="Sab">Sábado</option>
 </select><br/>
+</div>
+<div class="group">
 <textarea>
-    Assunto:
+    Conteúdo Resumido:
     </textarea><br/>
-<input type="submit" name="submit" value="Enviar" class="btn-login"><br/>
+	</div>
+<input type="submit" name="submit" value="Enviar" class="btn-disciplina"><br/>
 </form>
 </div>
-
 
  <footer class="footer">
 <p>&copy; 2017. Faculdade Tecnologia Inovação.<p>
